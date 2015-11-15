@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>Tweets</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- For page content to resize on smartphones for easier reading instead of zoomed out. -->
+
+    <link href="https://www.holbertonschool.com/level2/holberton.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="behavior.js"></script>
+    <script src="drawing.js"></script>
+
+  </head>
+
+  <body class="works_on_smartphone"> <!-- For Flexbox layout to work on smartphones -->
+
+<!-- Header -->  
+    <header>
+
+<!-- Social sharing buttons -->
+      <div class="right">
+
+<!-- Facebook share button -->
+        <div>
+	    <div id="fb-root"></div>
+	      <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+		  </script>
+
+	        <div class="fb-share-button" data-href="http://173.246.107.76/index.html" data-layout="button_count"></div>
+		</div>
+
+<!-- Twitter share button -->
+<div>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-text="Amsterunner: fun facts about running" data-via="Sissilacoureuse" data-hashtags="amsterunner">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+	  </script>
+      </div>
+
+      </div> <!-- End of  Social sharing buttons div .right -->
+
+<!-- Navigation menu -->
+      <ul class="navigation">
+	<li class="logo">&#916;</li>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="facts.html">Facts</a></li>
+	<li><a href="tweets.html">Tweets</a></li>
+	<li><a href="quiz.html">Quiz</a></li>
+	<li><a href="game.html">GameProject</a></li>
+	<li><a href="about.html">About</a></li>
+      </ul>
+
+    </header>
+
+    <main>
+
+<!-- Article contains all headings and paragraphs. All text should go here. -->    
+      <article>
+	
+	<div id="tweets">
+
+	<br> <!-- So navbar doesn't overlap with h1 on smartphones -->
+
+	<h1 class="logo">&#916; Tweets</h1>
+
+	<p>Here's a glimpse of what's happening on my <a href="https://twitter.com/Sissilacoureuse" target="_blank">Twitter</a> account:
+	</p>
+       
+	<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/holbertonschool">@holbertonschool</a> <a href="https://twitter.com/electra_chong">@electra_chong</a> Level2 Day6: +60h of command line, now using automatically Emacs editor commands in Word as shortcut keys...</p>&mdash; Siphan (@Sissilacoureuse) <a href="https://twitter.com/Sissilacoureuse/status/662370862792855553">November 5, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/techrun?src=hash">#techrun</a>, a race for <a href="https://twitter.com/hashtag/innovation?src=hash">#innovation</a> and <a href="https://twitter.com/hashtag/startups?src=hash">#startups</a>! <a href="https://t.co/gGEKmsN2RB">https://t.co/gGEKmsN2RB</a></p>&mdash; Siphan (@Sissilacoureuse) <a href="https://twitter.com/Sissilacoureuse/status/660957488066490368">November 1, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Hell yeah! I&#39;m applying right now <a href="https://twitter.com/hashtag/iwanttobeasoftwareengineer?src=hash">#iwanttobeasoftwareengineer</a> <a href="https://t.co/Y26DNZCcQ2">https://t.co/Y26DNZCcQ2</a></p>&mdash; Siphan (@Sissilacoureuse) <a href="https://twitter.com/Sissilacoureuse/status/650259101793021952">October 3, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        </div>
+
+	<br>
+	<br>
+
+        <div class="drawingNight">
+          <h5 class="captionDrawingNight"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My attempt of drawing myself running at night using JS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h5>
+	</div>
+
+<!-- Drawing canvas -->
+        <canvas id="canvas" width="400" height="400"></canvas>
+
+
+      </article>
+<!-- End of article -->
+
+<!-- Comments section -->      
+      <aside>
+
+	<div>
+	  <div id="disqus_thread"></div>
+	  <script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//amsterunner.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+	  </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+	  </noscript>
+	</div>
+
+      </aside>
+
+    </main>
+
+<!-- Footer -->  
+    <footer>
+      <p>Made by <a href="https://twitter.com/Sissilacoureuse" target="_blank">Carole Bou</a> for <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a></p>
+    </footer>
+
+  </body>
+
+</html>
