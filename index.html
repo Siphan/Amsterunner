@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>Homepage</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- For page content to resize on smartphones for easier reading instead of zoomed out. -->
+
+    <link href="https://www.holbertonschool.com/level2/holberton.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="behavior.js"></script>
+
+  </head>
+
+  <body class="works_on_smartphone"> <!-- For Flexbox layout to work on smartphones -->
+
+
+<!-- Header -->  
+    <header>
+
+<!-- Social sharing buttons -->
+      <div class="right">
+
+<!-- Facebook share button -->
+        <div>
+	  <div id="fb-root"></div>
+	  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+	  </script>
+
+	  <div class="fb-share-button" data-href="http://173.246.107.76/index.html" data-layout="button_count"></div>
+	</div>
+
+<!-- Twitter share button -->
+	<div>
+	  <a href="https://twitter.com/share" class="twitter-share-button" data-text="Amsterunner: fun facts about running" data-via="Sissilacoureuse" data-hashtags="amsterunner">Tweet</a>
+	  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+	  </script>
+	</div>
+
+      </div> <!-- End of  Social sharing buttons div .right -->
+
+<!-- Navigation menu -->
+      <ul class="navigation">
+	<li class="logo">&#916;</li>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="facts.html">Facts</a></li>
+	<li><a href="tweets.html">Tweets</a></li>
+	<li><a href="quiz.html">Quiz</a></li>
+	<li><a href="game.html">GameProject</a></li>
+	<li><a href="about.html">About</a></li>
+      </ul>
+
+    </header>
+
+    <main>
+      
+<!-- Article contains all headings and paragraphs. All text should go here. -->
+      <article>
+	
+	<br> <!-- So navbar doesn't overlap with h1 on smartphones -->
+	
+	<h1 class="logo">&#916; Amsterunner</h1>
+
+        <h3>Fun facts and trivia about running</h3>
+
+	<p>
+	The name Amsterunner is a contraction of the city 'Amsterdam' in The Netherlands, where I currently live, and the word 'runner'.
+	</p>
+	
+	<br>
+	<br>
+
+	<div class="blockText quote">
+
+	  <br>
+	  <p>
+	    <em>"We run, not because we think it is doing us good, but because we enjoy it and cannot help ourselves. The more restricted our society and work become, the more necessary it will be to find some outlet for this craving for freedom. No one can say, 'You must not run faster than this, or jump higher than that.' The human spirit is indomitable."</em>
+	  </p>
+
+	  <p>
+	    - <a href="https://en.wikipedia.org/wiki/Roger_Bannister" target="_blank">Sir Roger Bannister</a>, first man to break the four minute mile.
+	  </p>
+
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	
+        <p>If you have any feedback and suggestions, or if you simply want to get in touch, you may leave your comments or <strong><span style="color:#45A8FF">find me on:</span></strong>
+	</p>
+
+<!-- Clickable images -->
+         <div class="findMe">
+
+<!-- Google+ -->
+	 <a href="https://plus.google.com/u/1/116259062974091906786/posts/p/pub" target="_blank"><img class="google" src="https://cdn4.iconfinder.com/data/icons/miu-square-shadow-social/60/google_plus-square-shadow-social-media-128.png" alt="Google+"></a>
+
+<!-- Twitter -->
+	 <a href="https://twitter.com/Sissilacoureuse" target="_blank"><img class="twitterBirds" src="https://cdn4.iconfinder.com/data/icons/miu-square-shadow-social/60/twitter-square-shadow-social-media-128.png" alt="Twitter"></a>
+
+<!-- Facebook -->
+         <a href="https://www.facebook.com/siphan.little" target="_blank"><img class="facebook" src="https://cdn4.iconfinder.com/data/icons/miu-square-shadow-social/60/facebook-square-shadow-social-media-128.png" alt="Facebook"></a>
+
+<!-- LinkedIn -->
+         <a href="https://nl.linkedin.com/pub/carole-bou/8/633/6aa" target="_blank"><img class="linkedIn" src="https://cdn4.iconfinder.com/data/icons/miu-square-shadow-social/60/linkedin-square-shadow-social-media-128.png" alt="linkedIn"></a>
+
+<!-- GitHub -->
+         <a href="https://github.com/Siphan" target="_blank"><img class="gitHub" src="https://cdn4.iconfinder.com/data/icons/miu-square-shadow-social/60/github-square-shadow-social-media-128.png" alt="gitHub"></a>
+
+         </div>  
+
+	<div class="blockText"> 
+
+         <br>
+	 <br>
+
+	<h2>Why this website?</h2>
+
+	<div class="holberton"><img src="https://www.holbertonschool.com/holberton-logo.png" alt="Holberton School logo"></div> 
+	<p>
+	This site is built within the framework of <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a> application process. I have chosen the topic of running since practicing this activity has helped me in various ways, beyond the initial fitness benefits. 
+	</p>
+
+<!-- Clickable thumbnail -->
+          <img id="smart_thumbnail" class="small" src="http://www.seriangolo.it/wp-content/uploads/2015/06/scene-00001.jpg" alt="Elliot">
+
+	<p>
+	Thank you Holberton School for giving me this opportunity to develop valuable skills by learning in the same environment as professionals, for giving me access to my own server and for allowing me to interact with fellow learners. I have enjoyed every step of building my website from scratch, using the command line, which makes me feel empowered like <a href="http://blog.piratelufi.com/2015/06/watch-mr-robot-now-a-tv-series-about-hackers/" target="_blank">Elliot</a>.
+	</p>
+
+	</div>
+
+	<br>
+	<br>
+	<br>
+	
+	<div class="blockText">
+	  <br>
+	<h3 class="logo">&#916; A little about me</h3>
+        
+	<p>
+	I enjoy many other activities: cooking and everything related to food, travelling, cycling, watching movies, reading, learning whatever I can about science, to name a few.</p>
+
+	<p>
+	If you want to learn more about how running has inspired me, you can read this <a href="about.html">about me</a> section.
+	</p>
+
+	</div>
+
+      </article>
+<!-- End of article -->
+
+<!-- Comments section -->
+      <aside>
+	<div>
+	  <div id="disqus_thread"></div>
+	  <script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//amsterunner.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+	  </script>
+	  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+	  </noscript>
+	</div>
+      </aside>
+
+    </main>
+
+<!-- Footer -->  
+    <footer>
+	<p>Made by <a href="https://twitter.com/Sissilacoureuse" target="_blank">Carole Bou</a> for <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a></p>
+    </footer>
+
+  </body>
+
+</html>
