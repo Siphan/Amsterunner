@@ -1,0 +1,353 @@
+/* Flexbox */
+
+body {
+    display: flex;
+    flex-direction: column; 
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+article {
+    flex: 2;
+    overflow-y: auto;
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Flexbox */
+
+
+/* Background image*/
+
+html { 
+    background: url(http://www.lowcostholidays.com/blog/wp-content/uploads/2015/01/Golden-Gate-Bridge.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* Header */
+
+header {
+    padding: 10px;
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header .navigation {
+    text-align: center;
+}
+
+header li a {
+    margin: 0 2px;
+}
+   
+
+/*  Article */
+
+/*Article layout*/
+
+article {
+    background-color: #e8e8e8;
+    border-radius: 10px;
+}
+
+.blockText {
+    border: 3px solid #bfd1e0; 
+    border-radius: 4px;
+    padding: 8px;
+} 
+
+.quote {
+    font-size: 18px;
+}
+
+/* Pinned-down menu*/
+
+.menu {
+    display: inline-block;
+    position: fixed;
+    z-index: 1;
+    width: 10%;
+    padding-top: 17px;
+    right: 774px;
+    background-color: rgba(130,255,168, 0.7);
+    border: 0 solid rgba(130,255,168, 0.7);
+    border-radius: 70px 10px 10px 70px;
+}
+
+.menu p {
+    line-height: 60%;
+    text-indent: 50px;
+    font-weight: bold;
+}
+
+/* Drawing canvas */
+
+#canvas {
+    display: block;
+    margin: auto;
+}
+
+.captionDrawingNight {
+   position: absolute;
+   width: 100%; 
+   top:  1276px; 
+   left: 582px; 
+}
+
+
+/* Article text*/
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Josefin Sans';
+    color: black;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 140%;
+}
+
+li, li p {
+    text-indent: 10px;
+    line-height: 140%;
+}
+
+.menu p {
+    text-align: left;
+    font-size: 14px;
+}
+
+.aboutTitle {
+    text-indent: 20px;
+}
+
+
+/* Links colors */
+
+/* unvisited link */
+
+a {
+    color: #361357;
+}
+
+/* visited link */
+
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+
+a:hover {
+    color: #FC000D;
+}
+
+#tweets h1, p {
+    text-align: center;
+}
+
+.twitter-tweet {
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
+}
+
+
+/* Quiz */
+
+#test { /* Rule affecting div #test */
+    border: 2px solid #000; /* Visual box containing 1 question at a time, next question appears when answer to previous question is submitted */
+    border-radius: 4px;
+    border-style: double;
+    padding: 10px 40px 40px 40px;
+}
+
+
+/* Article images */
+
+img {
+    border: 0 solid #0b151f;
+    border-radius: 5px;
+    float: right;
+    margin: 8px;
+}
+
+.holberton {
+    width: 15%;
+    margin: 12px;
+}
+
+.profile {
+    width: 15%;
+}
+
+.findMe a img { /* Clickable contact images */
+    display: inline-block;
+    margin-right: 2px;
+    vertical-align: middle;
+}
+
+.blockText {
+    clear: right; /* Clears the float from clickable contact images */
+}
+
+.jacqueline {
+    float: left;
+}
+
+.siabatou {
+    width: 50%;
+    margin-left: 12px;
+    z-index: -1;
+}
+
+.signs {
+    display: inline-block;
+    padding: 20px 80px 20px 20px;
+    border: 1.5px solid #1A3B58;
+    border-radius: 5px;
+    vertical-align: middle;
+    background-color: #E8D971;
+    margin: 0 20px 0 0 ;
+}
+
+.signs img {
+    -webkit-filter: grayscale(0.5);
+    filter: grayscale(1);
+}
+
+.signIdea {
+    width: 30%;
+}
+
+.signStranger {
+    width: 40%;
+}
+
+.signBlerch, .signAlmost {
+    width: 45%;
+}
+
+.signGuy, .pool, .kathrine, .jacqueline {
+    width: 30%;
+}
+
+.fauja {
+    width: 20%;
+    margin-left: 12px;
+    z-index: 1;
+}
+
+.coolRunnings {
+    width: 35%;
+}
+
+.blerch {
+    float: left;
+    width: 25%;
+    margin-top: 0;
+}
+
+.stages {
+    float: right;
+    margin-left: 8px;
+}
+
+/* Athens stadium, Istanbul border & runningSiphan images layout */
+
+.athens, .runningSiphan { /* images resized */
+    width: 40%;
+}
+
+.athens {
+    margin-top: 33px;
+    margin-left: 15px;
+}
+
+.istanbul {
+    width: 30%;
+    margin-top: -25px;
+    margin-left: 23px;
+}
+
+.imageAthens, .imageIstanbul, .imageRunningSiphan { /* position of div containing the above images and their captions below */
+   position: relative; 
+   width: 100%; /* This is for IE 6, check display on other browsers */
+}
+
+.captionAthens, .captionIstanbul, .captionRunningSiphan { /* captions */ 
+   position: absolute;
+   width: 100%; 
+}
+
+.captionAthens { 
+   top: 155px; 
+   left: 375px; 
+}
+
+.captionIstanbul {
+    top: -33px;
+    left: 446px;
+}
+
+.captionRunningSiphan { 
+   top: 291px; 
+   left: 408px; 
+}
+
+h5 span { 
+   color: #e8e8e8; 
+   font-size: 16px;
+   font-family: 'Josefin Sans', serif;
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.5);
+   padding: 10px; 
+}
+
+.imageIstanbul h5 span {
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 2px;
+}
+
+/* End of article */
+
+
+/* Aside layout */
+
+aside {
+    background-color: #BFD1E0;
+    opacity: 0.9;
+    border-radius: 10px;
+    color: black;
+}
+
+
+/* Footer */
+
+footer {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer p {
+    text-align: center;
+}
